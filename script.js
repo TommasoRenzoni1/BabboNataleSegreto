@@ -75,7 +75,7 @@ document.getElementById("removeButton").addEventListener("click", () => {
       } else {
           document.getElementById("message").innerHTML = "Sono finite le persone a cui fare regali!!!";
       }
-      document.getElementById("bye").innerHTML = "Hai finito, puoi chiudere questa pagina. Arrivederci!!1!1!1";
+      document.getElementById("bye").innerHTML = "Hai finito, puoi chiudere questa pagina. Non aprire questa pagina mai più. Arrivederci!!1!1!1";
   });
 });
 
