@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babbo Natale Segreto</title>
+    <script type="module" src="./script.js"></script>
+    <link rel="icon" type="image/x-icon" href="media/favicon-96x96.png">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+    <div>
+        <h1> Babbo Natale Segreto</h1>
+        <p id="instructions">
+            Clicca su "Estrai Nome" per scoprire a chi devi fare il regalo. 
+            Segnati il nome che viene estratto, poiché <span>non sarà più possibile recuperarlo in seguito</span>: 
+            la lista di nomi è memorizzata in un database, e ogni volta che clicchi, un nome viene rimosso in modo casuale.
+        </p>
+    </div>
+
+    
+    
+    <div class="typewriter">
+        <div>
+            <audio id="typingSound" src="media/typewriter.mp3" preload="auto"></audio>
+
+            <p> I partecipanti sono </p>
+            <div class ="fade">
+                <ul>
+                    <li> Annalia </li>
+                    <li> Giulia </li>
+                    <li> Laura </li>
+                    <li> Luca </li>
+                    <li> Mariasole </li>
+                    <li> Marta </li>
+                    <li> Matilde </li>
+                    <li> Niccolò </li>
+                    <li> Tommaso </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <button class ="fade" id="removeButton" onclick="playAmogus()" >Estrai Nome</button>
+    <audio id="amogus" src="media/Vine Boom sound effect.mp3"></audio>
+    <script>
+        function playAmogus(){
+            let audioAmogus = document.getElementById("amogus");
+            if (audioAmogus){
+                audioAmogus.play();
+            } else{
+                console.error("Amogus not found!");
+            }
+        }
+    </script>
+
+    <div id = "creepy">
+        <img src="media/creepysnowman.jpg" width=270px>
+    </div>
+
+
+    <p class= "fade" id="message"></p>
+
+
+    <p id="bye"></p>
+    
+</body>
+
+</html>
